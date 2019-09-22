@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Cv</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="personal">
+        <div class="info">
+          <h2>Aliaksandr Tsimashenka</h2>
+            <p><em>Telephone number:</em> +375291883714</p>
+            <p><i>E-mail:</i><a href="mailto:tihonec84@mail.ru">tihonec84@mail.ru</a>
+            </p>
+            <p><a href="https://github.com/tihonec84">GitHub</a></p>
+        </div>
+        <div class="pic">
+          <img src="cv.jpg" alt="CV image">
+        </div>
+      </div>
+      <h3>Summary</h3>
+        <p>Novice web-developer.Confident knowledge of HTML,CSS.</p>
+      <h3>Skills</h3>
+       <p><strong>Programming languages and technologies:</strong> HTML,CSS,Java,PHP,MySQL.</p>
+       <p><strong>Programming practices:</strong>Training projects, freelanse projects, code review.</p>
+       <p><strong>Frameworks and Libraries:</strong> Bootstrap3(4), JQuery, CMS-Modx Evolution.</p>
+       <p><strong>Tools:</strong> PHP Storm, Sublime Text3, Eclipse, Intellij IDEA.</p>
+       <p><strong>Other skills:</strong>Photoshop,Figma,Blisk,Open Server.</p>
+      <h3>Code Examples:</h3>
+        <pre>
+          <code>
+           (function ($) {
+             $(document).ready(function () {
+              // PROGRESS BAR
+              var $progress = $('.about__skills--bar');
+              $progress.eq(0).animate({width:"90%"}, 7000);
+              $progress.eq(1).animate({width:"95%"}, 7000);
+              $progress.eq(2).animate({width:"50%"}, 7000);
+              $progress.eq(3).animate({width:"85%"}, 7000);
+              $('.about__skills--number').delay(7000).fadeIn(1500);
+            });
+              // SLIDER
+            $(document).ready(function() {
+              $('.home__carousel').slick({
+                initialSlide: 1,
+                dots: true,
+                speed: 800,
+                fade: true,
+                slide: 'div',
+                arrows: true,
+                prevArrow: '.carousel__arrow--prev',
+                nextArrow: '.carousel__arrow--next',
+                dotsClass: 'slick-dots carousel__dots',
+              });
+              $('.home__carousel--slider').click(function next() {
+                $('.home__carousel').slick('slickNext');
+              });
+            });
+            // ISOTOPE
+            $(document).ready(function () {
+              var $pictures = $('.home__isotope').isotope({
+                itemSelector: '.home__isotope--el',
+                masonry: {
+                  gutter: 45,
+                  horizontalOrder: true
+                }
+              });
+              $('.home__group').on( 'click', 'button', function() {
+                var filterValue = $(this).attr('data-filter');
+                $pictures.isotope({ filter: filterValue });
+                $('.home__group').find('.home__group--active').removeClass('home__group--active');
+                $(this).addClass('home__group--active');
+              });
+              $('.home__isotope--append').on( 'click', function() {
+                var $items = getItemElement().add( getItemElement1() ).add( getItemElement2() );
+                $pictures.append( $items )
+                  .isotope( 'appended', $items );
+                  console.log('Added 3 images');
+                $('.home__isotope--el').pan();
+              });
+              $('.home__isotope--el').pan();  
+            });
+          </code>
+      </pre>
+      <h3>Experience</h3>
+        <p><strong>Freelance </strong></p> 
+        <p>(06.2019 - now).</p>
+      <h3>Education</h3>
+        <p><strong>Sukhoi P.O. Gomel State Technical University</strong>,Gomel,Belarus;</p>
+        <p>Electricity Power Department;</p>
+      <h3>Courses </h3>
+        <p><strong>Courses Software Development</strong> IT-Class, Gomel, 09.2015 - 08.2017.</p>
+        <p><strong>Web Application Development with Java</strong>Epam Training Center, Gomel, 11.2018 - 03.2019.</p>
+        <p><strong>HtmlAcademy</strong> <a href="https://htmlacademy.ru/profile/id1040235"> htmlacademy</a> 03.2019 - 07.2019.</p>
+      <h3>English</h3>
+        <p>Pre-Intermediate (A2).</p>    
+    </div>
+  </main> 
+</body>
+</html>
