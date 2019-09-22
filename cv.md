@@ -97,3 +97,21 @@ Novice web-developer.Confident knowledge of HTML,CSS.
         $('.home__isotope--el').pan();  
      });
 ```
+### **Experience**
+
+**Freelance**
+ (06.2019 - now).
+
+### **Education**
+
+**Sukhoi P.O. Gomel State Technical University**,Gomel,Belarus;   
+Electricity Power Department;
+  
+### **Courses**
+
+**Courses Software Development** IT-Class, Gomel, 09.2015 - 08.2017.
+**Web Application Development with Java** Epam Training Center, Gomel, 11.2018 - 03.2019.  
+**HtmlAcademy** [htmlacademy](https://htmlacademy.ru/profile/id1040235).
+
+### **English**
+Pre-Intermediate (A2).
